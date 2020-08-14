@@ -1,0 +1,243 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/*menu---*/
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+    text-align: left;
+    
+  }
+  
+  li {
+    float: left;
+  }
+  
+  li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+  
+  li a:hover {
+    background-color: #111;
+  }
+  /*----end of menu--*/
+  .container{
+      width: 120%;
+      height: 100vh;
+  }
+  .container img{
+      width: 100%;
+      height: 100vh;
+
+  }
+  .heading {
+    
+        color: white;
+        text-align: center;
+        text-transform: uppercase;
+        font-size: 30px;
+        text-shadow: 4px 5px 5px black;
+        margin-left: 1270px;
+       line-height: 1;
+        line-height: 1;
+      
+      }
+
+  
+  /*---about us--*/
+  .about-head{
+    background: transparent;
+    text-align: center;
+}
+.about-head h3{
+    display: inline-block;
+    text-transform: uppercase;
+    border-bottom:px solid blue ;
+    font-size: 20px;
+    padding-bottom: 10px;
+    margin-top: 40px;
+    color: blue;
+
+    
+}
+  .grid{
+    margin: 80px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 30px;
+    align-items: center;
+  
+  
+  }
+  .grid article{
+    border: 1px solid #000;
+    box-shadow: 2px 2px 6px white;
+    border-radius: 3px;
+    text-align: center;
+  
+  }
+  .grid article:hover{
+    transition: transform .1s ease-out;
+    transform: translateY(5px);
+  }
+  .grid article img{
+    width: 350px;
+  
+  
+  }
+  .text{
+    padding: 0 20px 20px;
+  
+  }
+  .text h3{
+    text-transform:uppercase ;
+  }
+  .text button{
+    background: linear-gradient(to right, black,rgb(146, 19, 19));
+    border-radius: 3px;
+    border: none;
+    color: pink;
+    padding: 10px;
+    width: 100%;
+    font-weight: 600;
+    text-shadow: 2px 3px 5px black;
+    text-transform:uppercase ;
+  
+  
+  }
+  @media (max-width:768px){
+    .grid{
+        grid-template-columns: repeat(2,1fr);
+    
+    }
+  }
+  @media(max-width:500px){
+    .grid{
+        grid-template-columns: repeat(3,1fr);
+  
+    }
+    .grid article{
+        text-align: center;
+  
+    }
+  }
+  
+  /*---end of about us---*/
+  /*image gallery--*/
+.gallery{
+    margin: 10px 50px;
+    margin-right: 50px;
+  
+  }
+  .gallery img{
+    width:200px;
+    padding: 15px;
+    filter: grayscale(0%);
+    transition: .1s;
+  
+  }
+  .gallery img:hover{
+    filter:grayscale(100%);
+    transform: scale(1.1);
+  }
+  .gallery-heading{
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 30px;
+    color:darkblue;
+  }
+  
+  
+  /*----end of image gallery---*/
+  /*--our services*/
+
+
+
+.service-head{
+    background: transparent;
+    text-align: center;
+}
+.service-head h3{
+    display: inline-block;
+    text-transform: uppercase;
+    border-bottom:px solid blue ;
+    font-size: 20px;
+    padding-bottom: 10px;
+    margin-top: 40px;
+    color: blue;
+
+    
+}
+.cen{
+    max-width: 1200px;
+    margin: auto;
+    overflow: hidden;
+    padding: 20px;
+
+}
+.service{
+    display: inline-block;
+    width: calc(100%/3);
+    margin: 0 -2px;
+    padding: border-box;
+    cursor: pointer;
+
+}
+.service:hover{
+    background: transparent;
+}
+.service i{
+    columns: #3498db;
+    font-size: 34px;
+    margin-bottom: 30px;
+    color: blue;
+}
+.service h2{
+    font-size: 18px;
+    text-transform: uppercase;
+    font-weight: 500;
+    margin: 0;
+
+}
+.service p{
+    color:darkgrey;
+    font-size: 15px;
+    font-weight: 500;
+    text-transform: uppercase;
+
+}
+@media screen and (max-width:900px){
+.service{
+    width: 50%;
+
+}
+}
+@media screen and (max-width:500px){
+    .service{
+        width: 100%;
+        
+    }
+    }
+    /*---end of our services--*/
+    /*--footer*/
+.footer{
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: black;
+    color: white;
+    text-align: center;
+  
+  }
+  /*--end of footer--*/

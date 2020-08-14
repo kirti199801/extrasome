@@ -11,6 +11,9 @@
     <script src='https://kit.fontawesome.com/a076d05399.js'></script>
     <link rel="stylesheet" type="text/css" href="lightbox.min.css">
     <script src="lightbox-plus-jquery.min.js"></script>
+    
+    <script src='https://kit.fontawesome.com/a076d05399.js'></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
    
     
 </head>
@@ -20,37 +23,19 @@
       <h1 class="logo1-text">MOOD 4 FOOD</h1>
 
     </div>
-
-    <i class="fa fa-bars menu-toggle"></i>
-    <ul class="nav">
-        <li><a href="#">HOME</a></li>
-        <li><a href="#">SERVICES</a></li>
-        <li><a href="#">ABOUT US</a></li>
-        <li>
-          <a href="#">CONTACT</a>
-        <ul>
-          <li><a href="#"></a></li>
-          <li><a href="#" class="logout"></a></li>
-        </ul>
-        </li>
-  </ul>
-</header>
-
-
-  <script>
-   $(document).ready(function(){
-     $('.menu-toggle').on('click', function(){
-       $('.nav').toggleClass('showing');
-       $('.nav ul').toggleClass('showing');
-     });
-   });
-  </script>
+    <ul>
+      <li><a class="active" href="#home">Home</a></li>
+      <li><a href="#news">ABOUT US</a></li>
+      <li><a href="#contact">CONTACT</a></li>
+      <li><a href="#about">SERVICES</a></li>
+    </ul>
+    
 
   <div class = "container">
-    <img src="back.jpg">
+    
     <div class="inner">
     
-        <img src="logo.jpg" class="logo">
+        <!----<img src="logo.jpg" class="logo">---->
         
         <h1 class="heading">THE HAPPY PLATE</h1>
       <a href="#" class="btn-head pulsate">book A TABLE</a>
@@ -59,66 +44,84 @@
 </div>
 <!---ABOUT US-->
 <div class="about-head">
-  <h3>about us</h3>
+  <h3 > ABOUT US</h3>
 </div>
-<section id="main">
+<br></br>
+<div class="cards">
+	<div class="grid">
+		<article>
+			<img src="break.jpg" alt="sample photo" style="width: 200px; height:200px">
+			<div class="text">
+				<h3> breakfast</h3>
+				<p>
+          	Multigrain Roti
+          <br>
+         	Oats Upma
+          <br>
+         	Ven Pongal
+          <br>
+          	Methi Thalipeeth
+          <br>
+          	Mixed Dal Chilla
+          <br>
+         </p>
+				<button>order now</button>
 
-<article>
-<div class="main-img">
-  <img src="break.jpg" class="img-display" alt="img1" >
-  <div class="main-txt">
-  <h3 class="head">brekfast</h3>
-  <p> its owner</p>
+			</div>
+		</article>
+
+
+		<article>
+			<img src="l1.jpg" alt="sample photo" style="width: 200px; height:200px">
+			<div class="text">
+				<h3> lunch</h3>
+				<p>dal tadka
+          <br>
+          pizza
+          <br>
+          mix veg
+          <br>
+          dam aloo
+          <br>
+           veg cheese  kofta
+
+        </p>
+				<button>order now</button>
+
+			</div>
+		</article>
+
+
+		<article>
+			<img src="lunch.jpg" alt="sample photo" style="width: 200px; height:200px">
+			<div class="text">
+				<h3> dinner</h3>
+				<p> Masala Bhindi
+          <br>
+          paneer tikka
+          <br>
+          chole  masala
+          <br>
+          kolhapuri veg
+          <br>
+          shahi paneer</p>
+				<button>order now</button>
+
+			</div>
+		</article>
+
+	</div>
+
 </div>
-</div>
-</article>
-<article>
-  <div class="main-img">
-    <img src="f-f-4.png"class="img-display" alt="img1" >
-    <div class="main-txt">
-    <h3 class="head">brekfast</h3>
-    <p> its owner</p>
-  </div>
-  </div>
-  </article>
-  <article>
-    <div class="main-img">
-      <img src="f-f-6.jpg"class="img-display" alt="img1" >
-      <div class="main-txt">
-      <h3 class="head">brekfast</h3>
-      <p> its owner</p>
-    </div>
-    </div>
-    </article>
-    <article>
-      <div class="main-img">
-        <img src="g-6.jpg" class="img-display" alt="img1" >
-        <div class="main-txt">
-        <h3 class="head">brekfast</h3>
-        <p> its owner</p>
-      </div>
-      </div>
-      </article>
-      <article>
-        <div class="main-img">
-          <img src="g-7.jpg" class="img-display" alt="img1" >
-          <div class="main-txt">
-          <h3 class="head">brekfast</h3>
-          <p> its owner</p>
-        </div>
-        </div>
-        </article>
-        <article>
-          <div class="main-img">
-            <img src="g-9.jpg" class="img-display" alt="img1" >
-            <div class="main-txt">
-            <h3 class="head">brekfast</h3>
-            <p> its owner</p>
-          </div>
-          </div>
-          </article>
-</section>
+
+
 <!---END OF ABOUT US-->
+<section id="social-icon">
+  <a href="#"><i class="fa fa-instagram insta"></i></a>
+  <a href="#"><i class="fa fa-facebook-square fb"></i></a>
+  <a href="#"><i class="fa fa-whatsapp whatsapp"></i></a>
+  <a href="#"><i class="fa fa-twitter twit"></i></a>
+</section>
 <!----image gallery-->
 <div class="  gallery">
   <h3 class="gallery-heading"> image gallery</h3>
@@ -145,51 +148,46 @@
 
 <!---end of image gallery-->
 
-<!------services---->
-<div class="serv-head">
-  <h3 > SERVICES</h3>
+
+<!--our services-->
+<div class="service-head">
+  <h3> our services</h3>
+  <div class="cen">
+      <div class="service">
+          <i class="fas fa-clock"></i>
+          <h2>fast delivery</h2>
+          <p>Everything you orderd at mood4food will be quikly delivered to your door</p>
+      </div>
+
+
+      <div class="service">
+          <i class="fas fa-mortar-pestle"></i>
+          <h2>fres food</h2>
+          <p>WE USE ONLY THE BEST INGRDIENT TO COOK THE TESTY FRESH FOOD FOR YOU</p>
+      </div>
+
+      <div class="service">
+          <i class="fas fa-bread-slice"></i>
+          <h2>EXPERIENCE CHEF</h2>
+          <p>OUR STAF CONSIST OF CHEFS AND COOKS WITH YEARS EXPERIENCE</p>
+      </div>
+
+
+      <div class="service">
+          <i class="fas fa-concierge-bell"></i>
+          <h2>A VERIFY DISHES</h2>
+          <p>IN OUR MENU YOU'LL FIND A WIDE VARIETY OF DISHES DESSERTS AND DRINKS</p>
+      </div>
+  </div>
 </div>
-<section id="main-service">
-  <div class="icon-content">
-    <i class="fas fa-clock fast-delivery "></i> FAST DELIVERY
-    <P class="ex-txt"> Everything you orderd at mood4food will be quikly delivered to your door</P>
-
-  </div>
-
-</section>
-<br></br>
-<section id="main-service">
-  <div class="icon-content">
-    <i class="fas fa-mortar-pestle fresh-food" ></i> FRESH FOOD
-    <P class="ex-txt">WE USE ONLY THE BEST INGRDIENT TO COOK THE TESTY FRESH FOOD FOR YOU</P>
-
-  </div>
-
-</section>
-<br></br>
-<section id="main-service">
-  <div class="icon-content">
-    <i class="fas fa-bread-slice exp-chef"></i> EXPERIENCED CHEFS
-    <P class="ex-txt">OUR STAF CONSIST OF CHEFS AND COOKS WITH YEARS EXPERIENCE.</P>
-
-  </div>
-
-</section>
-<br></br>
-<section id="main-service">
-  <div class="icon-content">
-    <i class="fas fa-concierge-bell dish"> </i>A VERIFY DISHES
-    <P class="ex-txt">IN OUR MENU YOU'LL FIND A WIDE VARIETY OF DISHES DESSERTS AND DRINKS</P>
-
-  </div>
-
-</section>
 
 
+<!--end of services-->
+<!----footer-->
+<div class="footer">
+  <p> &copy;<span>mood4food </span></p>
 
-
-<!----end of services-->
-
+</div>
 <!---end of footer-->
 </body>
 </html>
